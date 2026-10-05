@@ -167,31 +167,14 @@ namespace ConsoleAppCSharp
 
                         break;
                     case 3:
-                        const int WIDTH = 640;
-                        const int HEIGHT = 480;
-                        const string TITLE = "Try windwos of SFML";
-                       
-                        //VideoMode mode = new VideoMode(WIDTH, HEIGHT);
-                        //RenderWindow window = new RenderWindow(mode, TITLE);
+                        Console.Clear();
 
-                        //window.SetVertic alSyncEnabled(true);
+                        int? menuChoice = new WindowMenu().Show();
 
-                        MyWindow wdw = new MyWindow();
-
-                        //window.Show();
-                        wdw.Show();
-                        Console.WriteLine("All done");
-
-                        Console.WriteLine("Try to SFML GUI");
-
-                        //window.Closed += (sender, args) => window.Close();
-
-                        //while (window.IsOpen)
-                        //{
-                        //    window.DispatchEvents();
-                        //    window.Clear(Color.Blue);
-                        //    window.Display();
-                        //}
+                        if (menuChoice.HasValue)
+                        {
+                            Console.WriteLine($"Selected menu option: {menuChoice.Value}");
+                        }
 
                         break;
                     case 4:

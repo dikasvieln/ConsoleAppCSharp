@@ -55,5 +55,11 @@ namespace ConsoleAppCSharp.LeetCode
                 BinarySearchRecursive(nums, sample, left, mid - 1);
             }
         }
+
+        public void linkedListInsert() { }
+
+        public void linkedListRemove() { }
+
+        public void linkedListCreation() { }
     } 
 }
