@@ -288,6 +288,12 @@ namespace ConsoleAppCSharp
                                 int sampleRec = 7;
                                 leet.BinarySearchRecursive(numsRec, sampleRec, 0, numsRec.Length - 1);
                                 break;
+                            case 3:
+                                Console.Clear();
+                                int[] dataNums = { 10, 23, 123, 1202 };
+                                //int result = leet.linkedListInsert(dataNums);
+                                Console.WriteLine("Result: " );
+                                break;
                             default:
                                 Console.WriteLine("Invalid option. Please choose again.");
                                 break;

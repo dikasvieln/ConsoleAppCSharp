@@ -56,7 +56,14 @@ namespace ConsoleAppCSharp.LeetCode
             }
         }
 
-        public void linkedListInsert() { }
+        public void linkedListInsert(int[] nums) { 
+           int result = 0;
+           for (int i = 0; i < nums.Length; i++)
+           {
+               result += nums[i];
+           }
+
+        }
 
         public void linkedListRemove() { }
 
